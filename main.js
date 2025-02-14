@@ -2,6 +2,7 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
+// FOR LOOP - IF CONDITION
 function isAPalindrome(word) {
   let reversedWord = "";
   for (let i = userWord.length - 1; i >= 0; i--) {
@@ -23,6 +24,20 @@ if (isAPalindrome(userWord)) {
 } else {
   console.log(userWord + " is NOT a palindrome");
 }
+
+// METHODS
+// function isAPalindrome(word) {
+//   let reversedWord = word.split("").reverse().join("");
+//   return word === reversedWord;
+// }
+
+// const userWord = prompt("Type a word");
+
+// if (isAPalindrome(userWord)) {
+//   console.log(userWord + " is a palindrome");
+// } else {
+//   console.log(userWord + " is NOT a palindrome");
+// }
 
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
