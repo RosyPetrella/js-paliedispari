@@ -1,5 +1,19 @@
-// Palidroma
-// Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
+// Palindroma
+// Chiedere all’utente di inserire una parola
+// Creare una funzione per capire se la parola inserita è palindroma
+
+const userWord = prompt("Type a word");
+let reversedWord = "";
+
+for (let i = userWord.length - 1; i >= 0; i--) {
+  reversedWord += userWord[i];
+}
+
+if (userWord === reversedWord) {
+  console.log("The word " + userWord + " is a palindrome!");
+} else {
+  console.log("The word " + userWord + " is not a palindrome!");
+}
 
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
